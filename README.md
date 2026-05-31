@@ -72,3 +72,32 @@ Details → [project-setup skill](.cursor/skills/project-setup/SKILL.md)
 4. UI component (`src/app/_components/`)
 
 Full guide → [clean-architecture-extension skill](.cursor/skills/clean-architecture-extension/SKILL.md)
+
+## Nutrition App (MVP)
+
+| Route | Feature |
+| :---- | :------ |
+| `/` | Dashboard — food entry, daily summary, deficiencies, AI suggestions |
+| `/settings` | Body weight & calorie target (localStorage) |
+| `/chat` | Gemini chat (boilerplate) |
+
+### Environment variables
+
+See [`.env.example`](.env.example). Required for full functionality:
+
+- `GEMINI_API_KEY` — AI food suggestions & meal plan
+- `NOTION_TOKEN` — Notion integration
+- `NOTION_FOOD_LOG_DATABASE_ID` — Food log database
+- `NOTION_FOOD_LOG_DATA_SOURCE_ID` — (optional) Notion API v5 query ID
+
+Notion database columns must match `src/infrastructure/notion/food-log.config.ts` (Japanese property names).
+
+### Deploy to Vercel
+
+1. Push the repo to GitHub
+2. Import the project in [Vercel](https://vercel.com)
+3. Set root directory to `nutrition_management_app` if the monorepo layout applies
+4. Add all environment variables from `.env.example`
+5. Deploy — build command: `pnpm build`
+
+Local production check: `pnpm build && pnpm start`

@@ -1,9 +1,5 @@
-import { ChatInterface } from "./_components/chat-interface"
+import { NutritionDashboard } from "@/app/_components/nutrition-dashboard"
 
 export default function Home() {
-  return (
-    <>
-      <ChatInterface />
-    </>
-  )
+  return <NutritionDashboard />
 }

@@ -13,6 +13,7 @@ import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
 import { Moon, Sun } from "lucide-react"
 import { APP_CONFIG } from "@/constants/app-config"
+import { UserSettingsPanel } from "@/app/_components/user-settings-panel"
 
 export default function SettingsPage() {
   const { setTheme, theme } = useTheme()
@@ -28,6 +29,8 @@ export default function SettingsPage() {
   return (
     <div className="container mx-auto py-10 max-w-4xl">
       <div className="grid gap-6">
+        <UserSettingsPanel />
+
         <Card>
           <CardHeader>
             <CardTitle>Appearance</CardTitle>

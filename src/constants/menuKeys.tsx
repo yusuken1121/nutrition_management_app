@@ -1,9 +1,16 @@
 import React from "react"
 import { PATH } from "@/constants/path"
-import { LogOutIcon, Mail, MessageSquare, Settings } from "lucide-react"
+import {
+  LogOutIcon,
+  Mail,
+  MessageSquare,
+  Salad,
+  Settings,
+} from "lucide-react"
 
 export const MENU_KEYS = {
   CHAT: "chat",
+  NUTRITION: "nutrition",
   CONTACT: "contact",
   SETTINGS: "settings",
   LOGOUT: "logout",
@@ -20,9 +27,15 @@ export interface SidebarItemConfig {
 }
 
 export const SIDEBAR_CONFIG: Record<MenuKey, SidebarItemConfig> = {
+  [MENU_KEYS.NUTRITION]: {
+    label: "栄養管理",
+    path: PATH.HOME,
+    icon: <Salad className="h-5 w-5" />,
+    activeColor: "text-emerald-600 dark:text-emerald-400",
+  },
   [MENU_KEYS.CHAT]: {
     label: "Chat",
-    path: PATH.HOME,
+    path: PATH.CHAT,
     icon: <MessageSquare className="h-5 w-5" />,
     activeColor: "text-blue-600 dark:text-blue-400",
   },
@@ -46,7 +59,11 @@ export const SIDEBAR_CONFIG: Record<MenuKey, SidebarItemConfig> = {
   },
 }
 
-export const mainSidebar: MenuKey[] = [MENU_KEYS.CHAT, MENU_KEYS.CONTACT]
+export const mainSidebar: MenuKey[] = [
+  MENU_KEYS.NUTRITION,
+  MENU_KEYS.CHAT,
+  MENU_KEYS.CONTACT,
+]
 
 export const manageSidebar: MenuKey[] = [MENU_KEYS.SETTINGS]
 

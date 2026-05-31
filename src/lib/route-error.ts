@@ -6,12 +6,14 @@ import {
   FoodNotFoundError,
   InvalidNutritionInputError,
 } from "@/core/domain/nutrition.validation"
+import { NutritionAiParseError } from "@/core/domain/nutrition-ai.parser"
 
 const DOMAIN_ERRORS = [
   InvalidContactSubmissionError,
   InvalidMessageHistoryError,
   InvalidNutritionInputError,
   FoodNotFoundError,
+  NutritionAiParseError,
 ]
 
 export function handleRouteError(
