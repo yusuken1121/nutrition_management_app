@@ -1,0 +1,79 @@
+[
+  {
+    "name": "白米（精白米）",
+    "nameEn": "White rice, cooked",
+    "aliases": ["ごはん", "rice"],
+    "per100g": {
+      "calories": 168,
+      "protein": 2.5,
+      "fat": 0.3,
+      "carbs": 37.1,
+      "vitaminB": 0.02,
+      "iron": 0.1,
+      "magnesium": 10
+    }
+  },
+  {
+    "name": "鶏むね肉（皮なし）",
+    "nameEn": "Chicken breast, skinless",
+    "aliases": ["チキン", "chicken breast"],
+    "per100g": {
+      "calories": 108,
+      "protein": 22.3,
+      "fat": 1.5,
+      "carbs": 0,
+      "vitaminB": 0.5,
+      "iron": 0.4,
+      "magnesium": 28
+    }
+  },
+  {
+    "name": "卵（全卵）",
+    "nameEn": "Egg, whole",
+    "aliases": ["たまご", "egg"],
+    "per100g": {
+      "calories": 151,
+      "protein": 12.3,
+      "fat": 10.3,
+      "carbs": 0.3,
+      "vitaminA": 190,
+      "vitaminD": 2.5,
+      "vitaminB": 0.4,
+      "iron": 2.2,
+      "calcium": 48,
+      "magnesium": 11
+    }
+  },
+  {
+    "name": "ブロッコリー",
+    "nameEn": "Broccoli",
+    "aliases": ["broccoli"],
+    "per100g": {
+      "calories": 33,
+      "protein": 4.3,
+      "fat": 0.5,
+      "carbs": 5.2,
+      "vitaminA": 62,
+      "vitaminC": 120,
+      "vitaminE": 2.1,
+      "calcium": 38,
+      "iron": 0.8,
+      "magnesium": 26
+    }
+  },
+  {
+    "name": "バナナ",
+    "nameEn": "Banana",
+    "aliases": ["banana"],
+    "per100g": {
+      "calories": 86,
+      "protein": 1.1,
+      "fat": 0.2,
+      "carbs": 21.4,
+      "vitaminC": 17,
+      "vitaminB": 0.3,
+      "magnesium": 32,
+      "iron": 0.3
+    }
+  }
+]
